@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://kde-apps.org/CONTENT/content-files/53979-%{name}.tar.gz
 # Source0-md5:	9698f2725876a2babc61ef13b90fbcf0
+Patch0:		%{name}-qobject.patch
 URL:		http://http://kde-apps.org/content/show.php?content=53979
 BuildRequires:	QtCore-devel
 BuildRequires:	QtGui-devel
@@ -28,6 +29,7 @@ to do this command things.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p0
 
 %build
 qt4-qmake -project
@@ -36,22 +38,13 @@ qt4-qmake
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
+install -d $RPM_BUILD_ROOT%{_bindir}
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	kde_htmldir=%{_kdedocdir} \
-	kde_libs_htmldir=%{_kdedocdir} \
-	kdelnkdir=%{_desktopdir} \
+install kpoldek $RPM_BUILD_ROOT%{_bindir}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/*
-%{_pixmapsdir}/*
-%{_desktopdir}/*.desktop
-%{_iconsdir}/*/*/apps/%{name}.png
-%{_datadir}/mimelnk/application/*
-%{_datadir}/apps/%{name}
+%attr(755,root,root) %{_bindir}/kpoldek
