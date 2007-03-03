@@ -28,6 +28,7 @@ interface, so dont blame me. I think it might be usefull for a people, that are 
 %setup -q -n %{name}
 
 %build
+qt4-qmake -project
 qt4-qmake
 %{__make}
 
