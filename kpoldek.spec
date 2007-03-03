@@ -42,12 +42,9 @@ install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 	kde_libs_htmldir=%{_kdedocdir} \
 	kdelnkdir=%{_desktopdir} \
 
-%find_lang %{name} --with-kde
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
 %{_pixmapsdir}/*
