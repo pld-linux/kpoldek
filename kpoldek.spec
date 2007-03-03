@@ -19,8 +19,10 @@ Requires:	poldek
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is a small program to manage a RPM packages using external application like poldek. Actually it is just an graphic 
-interface, so dont blame me. I think it might be usefull for a people, that are lazy to do this command things. 
+This is a small program to manage a RPM packages using external
+application like poldek. Actually it is just an graphic interface, so
+dont blame me. I think it might be usefull for a people, that are lazy
+to do this command things.
 
 #%description -l pl.UTF-8
 
@@ -45,6 +47,7 @@ install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
 %{_pixmapsdir}/*
