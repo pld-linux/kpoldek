@@ -1,8 +1,8 @@
 Summary:	Kpoldek
-Summary(pl.UTF-8):	Kpoldek
+Summary(pl):	Kpoldek
 Name:		kpoldek
 Version:	0.01alpha
-Release:	2
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://kde-apps.org/CONTENT/content-files/53979-%{name}.tar.gz
@@ -25,7 +25,7 @@ application like poldek. Actually it is just an graphic interface, so
 dont blame me. I think it might be usefull for a people, that are lazy
 to do this command things.
 
-#%description -l pl.UTF-8
+#%description -l pl
 
 %prep
 %setup -q -n %{name}
