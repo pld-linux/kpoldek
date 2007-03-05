@@ -8,7 +8,7 @@ Group:		X11/Applications
 Source0:	http://kde-apps.org/CONTENT/content-files/53979-%{name}.tar.gz
 # Source0-md5:	9698f2725876a2babc61ef13b90fbcf0
 Patch0:		%{name}-qobject.patch
-URL:		http://http://kde-apps.org/content/show.php?content=53979
+URL:		http://kde-apps.org/content/show.php?content=53979
 BuildRequires:	QtCore-devel
 BuildRequires:	QtGui-devel
 BuildRequires:	autoconf
