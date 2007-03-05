@@ -13,6 +13,7 @@ BuildRequires:	QtGui-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.2.0
+BuildRequires:	qt4-build
 BuildRequires:	qt4-qmake
 BuildRequires:	rpmbuild(macros) >= 1.129
 Requires:	poldek
