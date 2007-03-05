@@ -2,12 +2,11 @@ Summary:	Kpoldek
 Summary(pl.UTF-8):	Kpoldek
 Name:		kpoldek
 Version:	0.01alpha
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://kde-apps.org/CONTENT/content-files/53979-%{name}.tar.gz
 # Source0-md5:	9698f2725876a2babc61ef13b90fbcf0
-Patch0:		%{name}-qobject.patch
 URL:		http://kde-apps.org/content/show.php?content=53979
 BuildRequires:	QtCore-devel
 BuildRequires:	QtGui-devel
@@ -29,10 +28,9 @@ to do this command things.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p0
 
 %build
-qt4-qmake -project
+rm -f src/Makefile
 qt4-qmake
 %{__make}
 
@@ -40,7 +38,7 @@ qt4-qmake
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-install kpoldek $RPM_BUILD_ROOT%{_bindir}/
+install bin/kpoldek $RPM_BUILD_ROOT%{_bindir}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
