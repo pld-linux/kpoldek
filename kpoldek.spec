@@ -10,9 +10,6 @@ Source0:	http://kde-apps.org/CONTENT/content-files/53979-%{name}.tar.gz
 URL:		http://kde-apps.org/content/show.php?content=53979
 BuildRequires:	QtCore-devel
 BuildRequires:	QtGui-devel
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	qt4-build
 BuildRequires:	qt4-qmake
 BuildRequires:	rpmbuild(macros) >= 1.129
