@@ -1,5 +1,5 @@
-Summary:	Kpoldek
-Summary(pl.UTF-8):	Kpoldek
+Summary:	Kpoldek - Qt4-based GUI for poldek
+Summary(pl.UTF-8):	Kpoldek - graficzny interfejs do poldka oparty na Qt4
 Name:		kpoldek
 Version:	0.01alpha
 Release:	2
@@ -19,10 +19,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is a small program to manage a RPM packages using external
 application like poldek. Actually it is just an graphic interface, so
-dont blame me. I think it might be usefull for a people, that are lazy
+don't blame me. I think it might be useful for people, that are lazy
 to do this command things.
 
-#%description -l pl.UTF-8
+%description -l pl.UTF-8
+Ten program s³u¿y do zarz±dzania pakietami RPM przy u¿yciu zewnêtrznej
+aplikacji jak± jest poldek. W³a¶ciwie jest to tylko graficzny
+interfejs. Autor ma nadziejê, ¿e bêdzie przydatny dla ludzi zbyt
+leniwych by wydawaæ polecenia rêcznie.
 
 %prep
 %setup -q -n %{name}
@@ -36,7 +40,7 @@ qt4-qmake
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-install bin/kpoldek $RPM_BUILD_ROOT%{_bindir}/
+install bin/kpoldek $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
