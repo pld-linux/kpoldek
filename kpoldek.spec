@@ -23,10 +23,10 @@ don't blame me. I think it might be useful for people, that are lazy
 to do this command things.
 
 %description -l pl.UTF-8
-Ten program s³u¿y do zarz±dzania pakietami RPM przy u¿yciu zewnêtrznej
-aplikacji jak± jest poldek. W³a¶ciwie jest to tylko graficzny
-interfejs. Autor ma nadziejê, ¿e bêdzie przydatny dla ludzi zbyt
-leniwych by wydawaæ polecenia rêcznie.
+Ten program sÅ‚uÅ¼y do zarzÄ…dzania pakietami RPM przy uÅ¼yciu zewnÄ™trznej
+aplikacji jakÄ… jest poldek. WÅ‚aÅ›ciwie jest to tylko graficzny
+interfejs. Autor ma nadziejÄ™, Å¼e bÄ™dzie przydatny dla ludzi zbyt
+leniwych by wydawaÄ‡ polecenia rÄ™cznie.
 
 %prep
 %setup -q -n %{name}
