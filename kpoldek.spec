@@ -2,7 +2,7 @@ Summary:	Kpoldek - Qt4-based GUI for poldek
 Summary(pl.UTF-8):	Kpoldek - graficzny interfejs do poldka oparty na Qt4
 Name:		kpoldek
 Version:	0.01alpha
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://kde-apps.org/CONTENT/content-files/53979-%{name}.tar.gz
